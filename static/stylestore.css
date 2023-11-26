@@ -1,0 +1,39 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
+
+.id{
+    background: #3da0aa;
+    text-align: center;
+    color: aliceblue;
+}
+.navigation{
+     margin: 15px auto;
+}
+.nav_bar {
+
+    column-gap: 10px;
+    text-align: center;
+    display: flex;
+
+}
+
+.namespace{
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.link{
+    font-size: 15px;
+    font-family: Helvetica;
+    text-decoration: none;
+
+    color: #3da0aa;
+
+}
+
+.insert{
+    text-align: center;
+}

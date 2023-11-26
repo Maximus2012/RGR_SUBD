@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <meta charset="UTF-8">
+    <title>Clients</title>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="navigation">
+        <div class="nav_bar">
+            <div class="index">
+                <a href="/" class="link"> Главная</a>
+            </div>
+            <div class="clients">
+                <a href="/clients" class="link"> Клиенты</a>
+            </div>
+            <div class="store">
+                <a href="/store"  class="link"> Торговые точки</a>
+            </div>
+             <div class="rent">
+                <a href="/rent" class="link"> Аренда</a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="namespace">
+    {% for i in client_value %}
+    <div class="id">
+        {{i}}
+    </div>
+    <div class="name">
+        {{client_value[i].Name}}
+    </div>
+    <div class="adress">
+        {{client_value[i].Adress}}
+    </div>
+    <div class="phonenumber">
+        {{client_value[i].Phonenumber}}
+    </div>
+    <div class="requisities">
+        {{client_value[i].Requisities}}
+    </div>
+    <div class="contact">
+        {{client_value[i].Contact}}
+    </div>
+    <div class="worktime">
+        {{client_value[i].Worktime}}
+    </div>
+
+    {% endfor %}
+        </div>
+</div>
+
+
+
+
+
+</body>
+</html>

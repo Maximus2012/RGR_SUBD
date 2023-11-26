@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/stylestore.css" />
+    <meta charset="UTF-8">
+    <title>Store</title>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="navigation">
+        <div class="nav_bar">
+            <div class="index">
+                <a href="/" class="link"> Главная</a>
+            </div>
+            <div class="clients">
+                <a href="/clients" class="link"> Клиенты</a>
+            </div>
+            <div class="store">
+                <a href="/store"  class="link"> Торговые точки</a>
+            </div>
+             <div class="rent">
+                <a href="/rent" class="link"> Аренда</a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="namespace">
+    {% for i in store_value %}
+    <div class="id">
+        {{i}}
+    </div>
+    <div class="floor">
+        {{store_value[i].Floor}}
+    </div>
+    <div class="square">
+        {{store_value[i].Square}}
+    </div>
+    <div class="conditioner">
+        {{store_value[i].Isconditioner}}
+    </div>
+    <div class="rentcost">
+        {{store_value[i].Rentcost}}
+    </div>
+
+
+
+    {% endfor %}
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
